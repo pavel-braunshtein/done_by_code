@@ -41,6 +41,15 @@ final class MovieDetailsViewController: UIViewController {
         eyeImageView.tintColor = .link
         password.rightView = eyeImageView
         password.rightViewMode = .always
+      
+        let button = UIButton(type: .custom)
+        button.backgroundColor = .link
+        button.setTitle("Sign In", for: .normal)
+        button.frame = CGRect(x: 13, y: 540, width: 370, height: 40)
+        button.layer.cornerRadius = 5
+        view.addSubview(button)
+        
+        
         
         
         

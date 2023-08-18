@@ -1,6 +1,7 @@
 import UIKit
 import SwiftUI
 //
+
 final class MovieDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -14,9 +15,33 @@ final class MovieDetailsViewController: UIViewController {
         Label.frame = CGRect(x: 160, y: 300, width: 200, height: 100)
         view.addSubview(Label)
         
+        let Subtitle = UILabel()
+        Subtitle.text = "Subtitle"
+        Subtitle.font = UIFont.systemFont(ofSize: 30)
+        Subtitle.frame = CGRect(x: 150, y: 350, width: 200, height: 100)
+        view.addSubview(Subtitle)
+        
+        let username = UITextField()
+        username.placeholder = "Username"
+        username.frame = CGRect(x: 13, y: 440, width: 370, height: 40)
+        username.borderStyle = .roundedRect
+        username.backgroundColor = .lightGray
+        view.addSubview(username)
+        
+        
+        
         
     }
 }
+
+
+
+
+
+
+
+
+
 
 struct MovieDetailsViewControllerRepresentable: UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {

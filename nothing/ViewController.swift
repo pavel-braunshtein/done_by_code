@@ -28,6 +28,20 @@ final class MovieDetailsViewController: UIViewController {
         username.backgroundColor = .lightGray
         view.addSubview(username)
         
+        let password = UITextField()
+        password.placeholder = "Password"
+        password.frame = CGRect(x: 13, y: 480, width: 370, height: 40)
+        password.borderStyle = .roundedRect
+        password.backgroundColor = .lightGray
+        view.addSubview(password)
+        
+        let eyeImage = UIImage(systemName: "eye.fill")
+        let eyeImageView = UIImageView(image: eyeImage)
+        eyeImageView.frame = CGRect(x: 0, y: 0, width: 20,height: 20)
+        eyeImageView.tintColor = .link
+        password.rightView = eyeImageView
+        password.rightViewMode = .always
+        
         
         
         
